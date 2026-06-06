@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: vishnuprasathp/simple-ui-app
-  tag: c57dc
+  tag: 4857b
   pullPolicy: Always
 
 service:
