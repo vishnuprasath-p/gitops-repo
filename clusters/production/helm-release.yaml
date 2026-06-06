@@ -19,4 +19,4 @@ spec:
   values:
     image:
       repository: vishnuprasathp/simple-ui-app
-      tag: c57dc
+      tag: 4857b
