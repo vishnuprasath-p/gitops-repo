@@ -1,0 +1,19 @@
+replicaCount: 1
+
+image:
+  repository: vishnuprasathp/simple-ui-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 3000
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 64Mi

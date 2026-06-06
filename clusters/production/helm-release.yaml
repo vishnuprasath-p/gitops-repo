@@ -1,0 +1,22 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+
+metadata:
+  name: simple-ui-app
+  namespace: production
+
+spec:
+  interval: 1m
+
+  chart:
+    spec:
+      chart: ./helm-charts/simple-ui-app
+      sourceRef:
+        kind: GitRepository
+        name: flux-system
+        namespace: flux-system
+
+  values:
+    image:
+      repository: vishnuprasathp/simple-ui-app
+      tag: latest

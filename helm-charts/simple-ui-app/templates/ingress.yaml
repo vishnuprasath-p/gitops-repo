@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+
+metadata:
+  name: simple-ui-app
+
+spec:
+  ingressClassName: nginx
+
+  rules:
+  - host: app.example.com
+
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+
+        backend:
+          service:
+            name: simple-ui-app
+
+            port:
+              number: 80
