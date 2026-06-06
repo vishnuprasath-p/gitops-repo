@@ -18,5 +18,5 @@ spec:
 
   values:
     image:
-      repository: vishnuprasathp/simple-ui-app
+      repository: vishnu010194/simple-ui-app
       tag: 4857b
